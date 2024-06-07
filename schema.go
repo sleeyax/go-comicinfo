@@ -24,9 +24,11 @@ type ComicInfo struct {
 	Letterer            string    `xml:"Letterer,omitempty"`
 	CoverArtist         string    `xml:"CoverArtist,omitempty"`
 	Editor              string    `xml:"Editor,omitempty"`
+	Translator          string    `xml:"Translator,omitempty"`
 	Publisher           string    `xml:"Publisher,omitempty"`
 	Imprint             string    `xml:"Imprint,omitempty"`
 	Genre               string    `xml:"Genre,omitempty"`
+	Tags                string    `xml:"Tags,omitempty"`
 	Web                 string    `xml:"Web,omitempty"`
 	PageCount           int       `xml:"PageCount,omitempty"`
 	LanguageISO         string    `xml:"LanguageISO,omitempty"`
@@ -36,14 +38,16 @@ type ComicInfo struct {
 	Characters          string    `xml:"Characters,omitempty"`
 	Teams               string    `xml:"Teams,omitempty"`
 	Locations           string    `xml:"Locations,omitempty"`
+	MainCharacterOrTeam string    `xml:"MainCharacterOrTeam,omitempty"`
 	ScanInformation     string    `xml:"ScanInformation,omitempty"`
 	StoryArc            string    `xml:"StoryArc,omitempty"`
+	StoryArcNumber      string    `xml:"StoryArcNumber,omitempty"`
 	SeriesGroup         string    `xml:"SeriesGroup,omitempty"`
 	AgeRating           AgeRating `xml:"AgeRating,omitempty"`
-	Pages               Pages     `xml:"Pages,omitempty"`
 	CommunityRating     Rating    `xml:"CommunityRating,omitempty"`
-	MainCharacterOrTeam string    `xml:"MainCharacterOrTeam,omitempty"`
 	Review              string    `xml:"Review,omitempty"`
+	GTIN                string    `xml:"GTIN,omitempty"`
+	Pages               Pages     `xml:"Pages,omitempty"`
 
 	// Internal
 	XmlnsXsd string `xml:"xmlns:xsd,attr"`
